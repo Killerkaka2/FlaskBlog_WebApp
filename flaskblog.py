@@ -6,7 +6,7 @@ posts = [
     {
         'author' : "Corey Schafer",
         'title' : "Blog Post 1",
-        'Comments' : "First Blog Post",
+        'content' : "First Blog Post",
         'date_posted':"26 April, 2023"
     },
     {
