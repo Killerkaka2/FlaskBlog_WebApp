@@ -2,6 +2,7 @@ from datetime import datetime
 from flask import Flask, render_template, url_for, flash, redirect
 from flask_sqlalchemy import SQLAlchemy
 from forms import RegistrationForm,LoginForm
+from flask.cli import with_appcontext
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'b9e07607928837422ffbaac25e670116'
