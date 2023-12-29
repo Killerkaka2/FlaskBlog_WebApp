@@ -58,8 +58,12 @@ def login():
             flash('Login Failed. Invalid email and Password','danger')
     return render_template("login.html", title='Login', form=form)
 
-
 @app.route("/logout")
 def logout():
     logout_user()
     return redirect(url_for('home'))
+
+@app.route("/account")
+# Restriction before logging in
+def account():
+    return render_template('account.html', title='Account')
