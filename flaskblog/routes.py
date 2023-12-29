@@ -30,7 +30,7 @@ def about():
 
 @app.route("/register", methods=['GET','POST'])
 def register():
-    if current_user.is_authenticated():
+    if current_user.is_authenticated:
         return redirect(url_for('home'))
     # Creating object (Instance of the Class)
     form = RegistrationForm()
@@ -45,7 +45,7 @@ def register():
 
 @app.route("/login", methods=['GET','POST'])
 def login():
-    if current_user.is_authenticated():
+    if current_user.is_authenticated:
         return redirect(url_for('home'))
     # Creating object (Instance of the Class)
     form = LoginForm()
